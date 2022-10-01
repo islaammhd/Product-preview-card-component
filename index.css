@@ -99,7 +99,7 @@ body{
 @media(min-width:640px){
     .container{
         height: fit-content;
-        max-width: 520px;
+        max-width: 220px;
         max-height: 350px;
     }
     .image{
