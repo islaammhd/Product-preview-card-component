@@ -1,0 +1,128 @@
+/* - Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+body{
+    background-color:  hsl(30, 38%, 92%);
+    height: 97vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: fit-content;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 360px;
+    margin: .5rem 0 0 0;
+}
+
+.image{
+    background-image: url(/images/image-product-mobile.jpg);
+    background-position: center;
+    background-size:100% 100%;
+    flex: 1;
+    min-width: 250px;
+    max-width: 360px;
+    min-height: 140px;
+    border-radius: 15px 15px 0 0;
+    /* border: 1px solid; */
+}
+
+
+.maintext{
+    background-color:  hsl(0, 0%, 100%);
+    /* flex: 1; */
+    min-width: 250px;
+    max-width: 360px;
+    border-radius: 0 0 15px 15px;
+}
+
+.maintext h3{
+    color: hsl(228, 12%, 48%);
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 1.3rem 0 0 1.2rem;
+}
+
+.maintext h2{
+    margin: 1rem 1rem 0 1rem ;
+    color: hsl(212, 21%, 14%);
+}
+
+.maintext .para{
+    color: hsl(228, 12%, 48%);
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 1rem 1.2rem 0 1rem ;
+    line-height: 18px;
+}
+
+.maintext .rate{
+    margin: 1rem 1.2rem 0 1rem ;
+    word-spacing: 2rem;
+}
+
+.maintext .rate span{
+    color: hsl(158, 36%, 37%);
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.maintext .rate del{
+    color: hsl(228, 12%, 48%);
+}
+
+.maintext button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    font-family: sans-serif;
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 5px;
+    width: 80%;
+    height: 2.2rem;  
+    margin: 2rem 0 0 1.7rem;
+    cursor: pointer;
+}
+
+.maintext button:hover{
+    background-color: hsl(156, 42%, 18%);
+}
+
+
+
+@media(min-width:640px){
+    .container{
+        height: fit-content;
+        max-width: 500px;
+        max-height: 350px;
+    }
+    .image{
+        background-image: url(/images/image-product-desktop.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+        border-radius: 15px 0 0 15px;
+        flex: 1;
+        height: 350px;
+    }
+    .maintext{
+        border-radius: 0 15px 15px 0;
+        flex: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
